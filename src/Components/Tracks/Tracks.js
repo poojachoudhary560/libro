@@ -16,7 +16,8 @@ class Tracks extends Component{
             } else{
               return (
                 <Fragment>
-                  <h3 className="center" >{ heading }</h3>
+                  <p className="center teal-text text-lighten-2"
+                  style={{marginTop: '3rem', fontWeight: '380', fontSize: '24px', lineHeight: '32px'}}>{ heading }</p>
                   <div className="container">
                     <div className="section">
                       <div className="row">

@@ -51,22 +51,59 @@ class Lyrics extends Component {
       return (
         <Fragment>
           <div className='container'>
+            <div className='row' style={{marginBottom: '0'}}>
+              <div className='col s6'>
+                <Link
+                  to='/'
+                  className='btn-floating btn-large waves-effect waves-light white'
+                  style={{ margin: '1rem 0', border: '1px solid teal' }}
+                >
+                  <i className='material-icons teal-text'>arrow_back</i>
+                </Link>
+              </div>
+              <div className='col s6 '>
+                <nav
+                  className='teal-text white z-depth-0'
+                  style={{ marginTop: '0.5rem' }}
+                >
+                  <div class='nav-wrapper teal-text'>
+                    <div class='col s12' style={{display: 'flex', justifyContent: 'flex-end'}}>
+                      <Link
+                        to='/'
+                        className='teal-text breadcrumb'
 
-            <Link
-              to='/'
-              className='btn-floating btn-large waves-effect waves-light teal'
-              style={{margin: '1rem 0'}}
-            >
-              <i class='material-icons'>arrow_back</i>
-            </Link>
+                      >
+                        Home
+                      </Link>
+                      <a href='#'
+                        className='teal-text breadcrumb '
+                        style={{cursor: 'default'}}
+                      >
+                        {track.track_name}
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
 
-            <div className='card' style={{paddingTop: '2rem'}}>
+            <div className='card' style={{marginTop: '0'}}>
               <div className='card-content center'>
                 <p>Lyrics</p>
-                <span className='card-title teal-text text-darken-2' style={{fontWeight: '380'}}>"{track.track_name}"{' '}</span>
+                <span
+                  className='card-title teal-text text-darken-2'
+                  style={{ fontWeight: '380' }}
+                >
+                  "{track.track_name}"{' '}
+                </span>
                 <span className='right-align teal-text text-lighten-1'>
                   - by{' '}
-                  <span className='text-secondary' style={{fontStyle: 'italic'}}>{track.artist_name}</span>
+                  <span
+                    className='text-secondary'
+                    style={{ fontStyle: 'italic' }}
+                  >
+                    {track.artist_name}
+                  </span>
                 </span>
               </div>
 

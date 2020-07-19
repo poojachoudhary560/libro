@@ -4,7 +4,7 @@ const Track = (props) => {
   const {track} = props;
   return (
     <div className="col s12 m6">
-      <div className="card">
+      <div className="card" style={{marginBottom: '2rem', width: '97%'}}>
         <div className="card-content">
           <span className="card-title truncate">
             {track.artist_name}
@@ -15,7 +15,7 @@ const Track = (props) => {
             <p>
             <strong><i className="tiny material-icons teal-text">video_library</i> Album</strong>:{track.album_name}
           </p>
-          <Link to={`lyrics/track/${track.track_id}`} className="btn waves-effect waves-light btn-small btn-class"
+          <Link to={`lyrics/track/${track.track_id}`} className="btn waves-effect waves-light btn-class"
           style={{ marginTop: '1rem', marginBottom: '1rem'}}>
             <i></i>View Lyrics
           </Link>

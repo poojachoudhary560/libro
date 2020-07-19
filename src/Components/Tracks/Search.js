@@ -36,6 +36,7 @@ class Search extends Component {
           console.log(value);
           return (
             <div className='card' style={{margin: '0 auto', padding: '1rem 3rem'}}>
+              <div className="container">
               <div className='card-content'>
                 <span className='card-title'>
                   Get the Lyrics for your favorite song
@@ -46,7 +47,7 @@ class Search extends Component {
                     class='col s12'
                   >
                     <div class='row' style={{marginBottom: '0'}}>
-                      <div class='input-field col s6'>
+                      <div class='input-field col s10'>
                         <i className='material-icons prefix'>search</i>
                         <input
                           type='text'
@@ -56,7 +57,7 @@ class Search extends Component {
                           onChange={this.onChange}
                         />
                       </div>
-                      <div class='input-field col s6'>
+                      <div class='input-field col s2'>
                         <button className='btn' type='submit'>
                           Get Track Lyrics
                         </button>
@@ -64,6 +65,7 @@ class Search extends Component {
                     </div>
                   </form>
                 </div>
+              </div>
               </div>
             </div>
           );
